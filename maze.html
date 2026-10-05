@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>迷宫 — Xunsnow's Blog</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/game.css" />
+</head>
+<body>
+  <nav class="nav">
+    <a class="nav-logo" href="index.html">Xunsnow<span class="grad-text">.</span>blog</a>
+    <div class="nav-links">
+      <a href="game.html" class="nav-link">← 返回小游戏</a>
+    </div>
+  </nav>
+
+  <main class="game-wrap">
+    <h1 class="game-title"><span class="grad-text">迷宫</span></h1>
+    <div class="stage">
+      <canvas id="game" width="960" height="640"></canvas>
+      <div class="overlay hidden" id="overlay">
+        <h2 id="ovTitle" class="ov-title"></h2>
+        <p id="ovText" class="ov-text"></p>
+        <button class="ov-btn" onclick="location.reload()">再玩一次 (R)</button>
+      </div>
+    </div>
+    <p class="game-hint">
+      移动 <kbd>WASD</kbd>/<kbd>方向键</kbd> · 走到 <span style="font-size:1.1em">🏁</span> 终点即通关
+    </p>
+  </main>
+
+  <script src="js/maze.js"></script>
+</body>
+</html>

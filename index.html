@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Xunsnow's Blog</title>
+  <meta name="description" content="Xunsnow 的个人博客 —— 记录代码、生活与奇思妙想" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=Noto+Sans+SC:wght@400;500;700;900&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <div class="bg-blobs" aria-hidden="true">
+    <div class="blob blob-1"></div>
+    <div class="blob blob-2"></div>
+    <div class="blob blob-3"></div>
+  </div>
+
+  <nav class="nav">
+    <a class="nav-logo" href="index.html">Xunsnow<span class="grad-text">.</span>blog</a>
+    <div class="nav-links">
+      <a href="index.html" class="nav-link active">文章</a>
+      <a href="game.html" class="nav-link">小游戏</a>
+      <a href="#about" class="nav-link">关于</a>
+      <a href="https://github.com/xunsnow" class="nav-link" target="_blank" rel="noopener">GitHub</a>
+    </div>
+  </nav>
+
+  <header class="hero">
+    <p class="hero-eyebrow">WELCOME TO MY CORNER</p>
+    <h1 class="hero-title">
+      记录 <span class="grad-text grad-a">代码</span>、
+      <span class="grad-text grad-b">生活</span> 与
+      <span class="grad-text grad-c">奇思妙想</span>
+    </h1>
+    <p class="hero-sub">你好，我是 Xunsnow。这是我的个人博客，慢慢写，常更新。</p>
+  </header>
+
+  <main class="container">
+    <div class="filters" id="filters"></div>
+    <section class="post-grid" id="postGrid">
+      <div class="loading">正在加载文章…</div>
+    </section>
+  </main>
+
+  <footer class="footer" id="about">
+    <p class="footer-name grad-text">Xunsnow's Blog</p>
+    <p class="footer-note">纯 HTML · CSS · JS 构建，托管于 GitHub Pages</p>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,123 @@
+/* ========== 小游戏页 ========== */
+.game-wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px 16px 64px;
+}
+
+/* ========== 大厅：游戏列表 ========== */
+.game-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 24px;
+  width: min(720px, 96vw);
+}
+
+.game-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 8px;
+  background: var(--card);
+  border-radius: var(--radius);
+  padding: 36px 28px;
+  box-shadow: var(--shadow);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.game-card:hover { transform: translateY(-6px); box-shadow: var(--shadow-hover); }
+
+.game-emoji { font-size: 3.2rem; }
+.game-name { font-size: 1.2rem; font-weight: 800; }
+
+.game-btn {
+  margin-top: 14px;
+  padding: 9px 28px;
+  border-radius: 999px;
+  background: var(--grad-main);
+  color: #fff;
+  font-size: 0.92rem;
+  font-weight: 700;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.game-card:hover .game-btn { transform: scale(1.06); box-shadow: 0 8px 20px rgba(160, 107, 255, 0.4); }
+
+.game-title {
+  font-size: clamp(1.6rem, 4vw, 2.4rem);
+  font-weight: 900;
+  margin-bottom: 24px;
+}
+
+.stage {
+  position: relative;
+  width: min(720px, 96vw);
+}
+
+#game {
+  display: block;
+  width: 100%;
+  border-radius: 16px;
+  background: #1a1530;
+  box-shadow: 0 20px 60px rgba(40, 20, 90, 0.35), 0 0 0 4px #241e38;
+}
+
+.overlay {
+  position: absolute;
+  inset: 0;
+  border-radius: 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  background: rgba(15, 10, 35, 0.82);
+  backdrop-filter: blur(4px);
+}
+.overlay.hidden { display: none; }
+
+.ov-title {
+  font-size: clamp(1.8rem, 5vw, 3rem);
+  font-weight: 900;
+  color: #fff;
+}
+.ov-title.win {
+  background: linear-gradient(90deg, #ffd76b, #ff9a9e, #a06bff);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.ov-text { color: rgba(255, 255, 255, 0.75); font-size: 1rem; }
+
+.ov-btn {
+  margin-top: 8px;
+  padding: 12px 32px;
+  border: none;
+  border-radius: 999px;
+  background: linear-gradient(90deg, #ff6b9d, #a06bff, #5b9dff);
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 700;
+  font-family: inherit;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.ov-btn:hover { transform: translateY(-2px) scale(1.04); box-shadow: 0 10px 30px rgba(160, 107, 255, 0.45); }
+
+.game-hint {
+  margin-top: 20px;
+  color: var(--ink-soft);
+  font-size: 0.92rem;
+  text-align: center;
+}
+
+kbd {
+  font-family: "JetBrains Mono", monospace;
+  font-size: 0.8em;
+  background: #fff;
+  border: 1px solid rgba(160, 107, 255, 0.3);
+  border-bottom-width: 3px;
+  border-radius: 6px;
+  padding: 2px 7px;
+}

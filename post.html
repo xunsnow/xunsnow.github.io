@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>文章 — Xunsnow's Blog</title>
+  <meta name="description" content="Xunsnow 的个人博客" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=Noto+Sans+SC:wght@400;500;700;900&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.9.0/build/styles/github-dark.min.css" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body class="post-page">
+  <div class="progress-bar" id="progressBar"></div>
+
+  <div class="bg-blobs" aria-hidden="true">
+    <div class="blob blob-1"></div>
+    <div class="blob blob-2"></div>
+    <div class="blob blob-3"></div>
+  </div>
+
+  <nav class="nav">
+    <a class="nav-logo" href="index.html">Xunsnow<span class="grad-text">.</span>blog</a>
+    <div class="nav-links">
+      <a href="index.html" class="nav-link">← 返回首页</a>
+      <a href="https://github.com/xunsnow" class="nav-link" target="_blank" rel="noopener">GitHub</a>
+    </div>
+  </nav>
+
+  <main class="container container-post">
+    <article class="post-article">
+      <header class="post-header" id="postHeader">
+        <div class="loading">正在加载文章…</div>
+      </header>
+      <div class="post-content markdown-body" id="postContent"></div>
+      <nav class="post-pager" id="postPager"></nav>
+    </article>
+  </main>
+
+  <footer class="footer">
+    <p class="footer-name grad-text">Xunsnow's Blog</p>
+    <p class="footer-note">纯 HTML · CSS · JS 构建，托管于 GitHub Pages</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/marked@12.0.0/marked.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.9.0/build/highlight.min.js"></script>
+  <script src="js/post.js"></script>
+</body>
+</html>
